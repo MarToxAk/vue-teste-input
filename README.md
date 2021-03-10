@@ -1,2 +1,2 @@
-# vue-input-autocomplete
+# vue-teste-input
 Input Autocomplete Package for Vue

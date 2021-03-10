@@ -1,13 +1,13 @@
 {
     "private": false,
-    "name": "vue-input-autocomplete",
-    "version": "1.0.0",
+    "name": "vue-teste-input",
+    "version": "1.2.1",
     "description": "Vue Autocomplete Input Component",
-    "author": "sgflores",
+    "author": "MarToxAk",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sgflores/vue-input-autocomplete"
+        "url": "https://github.com/MarToxAk/vue-teste-input"
     },
     "main": "dist/inputautocomplete.umd.js",
     "module": "dist/inputautocomplete.esm.js",
