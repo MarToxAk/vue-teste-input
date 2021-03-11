@@ -84,7 +84,7 @@ export default {
                     console.log('esse é val' + val)
                     console.log('esse é i' + i)
                     /*check if the item starts with the same letters as the text field value:*/
-                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    if (arr[i].substr(arr[i].toUpperCase().search(val.toUpperCase()), val.length).toUpperCase() == val.toUpperCase()) {
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("DIV");
                         /*make the matching letters bold:*/
