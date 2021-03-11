@@ -1,7 +1,7 @@
 <template>
     <div class="autocomplete">
         <input autocomplete="off" type="text" :class="className" :value="value" 
-            :id="id" :name="name" :placeholder="placeholder" :style="style">
+            :id="id" :name="name" :placeholder="placeholder" :style="style" :v-model="model">
     </div>
 </template>
 
@@ -43,6 +43,11 @@ export default {
         style: {
             default() {
                 return 'width:100%';
+            }
+        },
+        model: {
+            default() {
+                return 'model';
             }
         },
         options: {
@@ -88,7 +93,7 @@ export default {
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("DIV");
                         /*make the matching letters bold:*/
-                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML = "<strong>" + arr[i].substr(arr[i].toUpperCase().search(val.toUpperCase()), val.length) + "</strong>";
                         b.innerHTML += arr[i].substr(val.length);
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
