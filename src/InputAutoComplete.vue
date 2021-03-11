@@ -185,6 +185,7 @@ export default {
     .autocomplete-items {
         position: absolute;
         border: 1px solid #d4d4d4;
+        color:black;
         border-bottom: none;
         border-top: none;
         z-index: 99;
