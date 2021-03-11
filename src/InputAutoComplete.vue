@@ -41,8 +41,9 @@ export default {
             }
         },
         style: {
+            type: String,
             default() {
-                return 'width:100%';
+                return 'width: 100%;height: 45px;';
             }
         },
         options: {
