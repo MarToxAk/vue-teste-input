@@ -1,7 +1,7 @@
 <template>
     <div class="autocomplete">
         <input autocomplete="off" type="text" :class="className" :value="value" 
-            :id="id" :name="name" :placeholder="placeholder">
+            :id="id" :name="name" :placeholder="placeholder" :style="style">
     </div>
 </template>
 
@@ -38,6 +38,11 @@ export default {
         placeholder: {
             default() {
                 return 'Enter here...';
+            }
+        },
+        style: {
+            default() {
+                return 'width:100%';
             }
         },
         options: {
